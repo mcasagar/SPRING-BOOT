@@ -1,3 +1,4 @@
+
 package com.sb.dao;
 
 import java.sql.Connection;
@@ -30,9 +31,7 @@ public class EmployeeDAOImpl implements IEmployeeDAO {
 				//set Query param values
 				ps.setString(1, desg1);
 				ps.setString(2, desg2);
-				ps.setString(3, desg3);
-				
-				
+				ps.setString(3, desg3);		
 				
 				//execute the query
 				try(ResultSet rs = ps.executeQuery()){
